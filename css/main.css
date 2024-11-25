@@ -1,0 +1,26 @@
+.priority-1 {
+
+    color: red;
+}
+
+.priority-2 {
+
+    color: orange;
+
+}
+
+.priority-3 {
+
+    color: green;
+}
+
+li {
+    list-style: none;
+}
+
+.reverse-check-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}

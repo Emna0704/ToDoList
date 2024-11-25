@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <title>Gestionnaire de Tâches</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestionnaire de Tâches</h1>
+    </header>
+
+    <section id="task-list">
+        <h2>Liste des Tâches</h2>
+        <ul id="toDoList">
+
+        </ul>
+    </section>
+
+
+    <section id="add-task-form">
+        <h2>Ajouter une Tâche</h2>
+        <div id="task-form">
+            <input type="text" id="task-name" placeholder="Nom de la tâche" >
+            <select id="task-priority"  onchange="selectPriority()">
+                <option value="1">Priorité Élevée</option>
+                <option value="2">Priorité Normale</option>
+                <option value="3">Priorité Basse</option>
+            </select>
+            <button onclick="addToDo()">Ajouter</button>
+            <button onclick="deleteToDo()" >Supprimer toutes les tâches sélectionnées</button>
+
+        </div>
+    </section>
+</body>
+
+</html>
